@@ -30,7 +30,7 @@ public class ListViewInScrollViewDemo extends AppCompatActivity {
     }
 
     private void initView() {
-        mMyAdapter = new MyAdapter(ListViewInScrollViewDemo.this, FakeData.getData());
+        mMyAdapter = new MyAdapter(ListViewInScrollViewDemo.this, FakeData.getListViewData());
         mListView.setAdapter(mMyAdapter);
         mMyAdapter.notifyDataSetChanged();
         Utils.setListViewHeightBasedOnChildren(mListView);

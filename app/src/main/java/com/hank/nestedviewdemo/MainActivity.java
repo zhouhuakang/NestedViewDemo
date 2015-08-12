@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mListViewInScrollView;
+    private Button mExpandableListviewInScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void findView() {
         mListViewInScrollView = (Button) findViewById(R.id.btn_ListViewInScrollViewDemo);
+        mExpandableListviewInScrollView = (Button) findViewById(R.id.btn_ExpandableListviewInScrollView);
     }
 
     private void initView() {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setListener() {
         mListViewInScrollView.setOnClickListener(this);
+        mExpandableListviewInScrollView.setOnClickListener(this);
     }
 
 
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_ListViewInScrollViewDemo:
                 startActivity(new Intent(MainActivity.this, ListViewInScrollViewDemo.class));
+                break;
+            case R.id.btn_ExpandableListviewInScrollView:
+                startActivity(new Intent(MainActivity.this, ExpandableListInScrollViewDemo.class));
                 break;
         }
     }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_group_sheet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="EYE处方单"
+            android:textColor="@color/gray_9d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_group_total_price_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_group_total_price"
+            android:text="¥"
+            android:textColor="@color/gray_9d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_group_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_group_icon"
+            android:text="347.27"
+            android:textColor="@color/gray_9d"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_group_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@mipmap/ic_arrow_up" />
+
+        <View
+            android:id="@+id/v_group_head_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_97" />
+    </RelativeLayout>
+
+</LinearLayout>
